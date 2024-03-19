@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{%block content %}
+
+{% if p == 1 %}
+  <h2>Инженерные тренажёры</h2>
+      <img src="{{ url_for('static', filename='img/sim1.png') }}">
+  {% else %}
+      <h2>Научные симуляторы</h2>
+      <img src="{{ url_for('static', filename='img/sim2.png') }}">
+  {% endif %}
+
+{% endblock %}
